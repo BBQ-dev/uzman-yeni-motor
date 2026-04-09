@@ -170,12 +170,12 @@ if (cihazKuyrugu === 'firin') {
             
             {/* Ustamızın Resmi (Eski tasarımdaki jilet gibi çerçeve) */}
             <div className="w-14 h-14 bg-white rounded-full flex-shrink-0 border-2 border-green-200 shadow-sm overflow-hidden">
-               <img src="/teknisyen.jpg" alt="Uzman Teknisyen" className="w-full h-full object-cover" />
+               <img src="/teknisyen.webp" alt="Uzman Teknisyen" className="w-full h-full object-cover" />
             </div>
 
             {/* Yeni Tasarımdaki V8 Motorlu Metinler */}
             <div className="flex flex-col leading-tight uppercase font-bold text-left">
-              <span className="text-green-700 text-xs">EKİBİMİZ MÜSAİT!</span>
+              <span className="text-green-700 text-xs">TEKNİSYENİMİZ MÜSAİT!</span>
               <span className="text-green-600 text-[10px] italic">MOTOR, KAZAN VE KART ARIZASI UZMANI</span>
               <span className="text-[9px] text-slate-500 mt-1">⭐ %97 MEMNUNİYET • ✅ ORİJİNAL PARÇA</span>
             </div>
