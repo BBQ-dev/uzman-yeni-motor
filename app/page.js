@@ -89,7 +89,7 @@ export default function Home() {
         {/* -- 6. HİZMET KARTLARI (Birebir Aynı Tasarım) -- */}
         <section className="px-6 py-8 bg-slate-50/80 border-y border-slate-100 text-left mt-8">
           <h2 className="text-[11px] font-black text-[#1E40AF] uppercase italic mb-4 leading-tight">
-            İSTANBUL GENELİ TÜM AĞIR ARIZALARDA UZMAN MÜDAHALE
+            İSTANBUL GENELİ TÜM ARIZALARDA UZMAN MÜDAHALE
           </h2>
           
           <div className="grid grid-cols-3 gap-2">
