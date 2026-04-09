@@ -46,15 +46,15 @@ export default function Home() {
         {/* -- 3. BAŞLIK VE ROZETLER -- */}
         <section className="px-6 mt-4 text-center">
           <h1 className="text-xl font-black text-[#1E40AF] leading-tight italic uppercase mb-2">
-            SADECE AĞIR ARIZALARDA KESİN VE GARANTİLİ ÇÖZÜM
+            BEYAZ EŞYA , KLİMA , KOMBİ UZMAN SERVİSİ
           </h1>
           <div className="flex justify-center items-center gap-2">
             <div className="bg-white border border-slate-100 inline-flex px-3 py-1.5 rounded-lg shadow-sm items-center gap-1.5 text-[10px] font-bold text-green-600">
               <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-              NÖBETÇİ USTA AÇIK (07:00-23:00)
+               AÇIK (07:00-23:00)
             </div>
             <div className="bg-[#FFF9E6] border border-[#FFD966]/30 inline-flex px-3 py-1.5 rounded-lg shadow-sm items-center gap-1 text-[10px] font-bold text-[#B48A00]">
-              <span>🛡️ 1 YIL GARANTİ</span>
+              <span> 785 M Yakında</span>
             </div>
           </div>
         </section>
@@ -64,7 +64,7 @@ export default function Home() {
           <div className="bg-green-50 border border-green-100 p-4 rounded-3xl flex items-center gap-4">
             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-xl shadow-sm border border-green-200">👨‍🔧</div>
             <div className="flex flex-col leading-tight uppercase font-bold text-left">
-              <span className="text-green-700 text-xs">V8 MOTORLU EKİBİMİZ MÜSAİT!</span>
+              <span className="text-green-700 text-xs">EKİBİMİZ MÜSAİT!</span>
               <span className="text-green-600 text-[10px] italic">MOTOR, KAZAN VE KART ARIZASI UZMANI</span>
               <span className="text-[9px] text-slate-500 mt-1">⭐ %97 MEMNUNİYET • ✅ ORİJİNAL PARÇA</span>
             </div>
@@ -92,7 +92,7 @@ export default function Home() {
         {/* -- 6. HİZMET KARTLARI (Birebir Aynı Tasarım) -- */}
         <section className="px-6 py-8 bg-slate-50/80 border-y border-slate-100 text-left mt-8">
           <h2 className="text-[11px] font-black text-[#1E40AF] uppercase italic mb-4 leading-tight">
-            İSTANBUL GENELİ TÜM AĞIR ARIZALARDA UZMAN MÜDAHALE
+           Çekmeköy,Ümraniye,Sancaktepe Bölge Servisi
           </h2>
           
           <div className="grid grid-cols-3 gap-2">
@@ -128,7 +128,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-3">
             
             <div className="bg-slate-50 p-3 rounded-xl shadow-sm border border-slate-200">
-              <h3 className="text-[10px] font-black text-slate-800 uppercase italic">Ağır Arızalara Kesin Çözüm</h3>
+              <h3 className="text-[10px] font-black text-slate-800 uppercase italic">Sektörde Lideriz</h3>
               <p className="text-[9px] text-slate-500 mt-1 leading-tight font-bold uppercase">
                 MOTOR, ANAKART, KOMPRESÖR VE KAZAN GİBİ UZMANLIK İSTEYEN AĞIR ARIZALARDA CİHAZINIZI KÖKTEN ONARIYOR, PARÇA DEĞİŞİMLERİNE 1 YIL GARANTİ VERİYORUZ.
               </p>
