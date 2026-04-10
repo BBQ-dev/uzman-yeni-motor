@@ -164,24 +164,30 @@ if (cihazKuyrugu === 'firin') {
 
 
 
-       {/* -- 4. TEKNİSYEN MÜSAİTLİK -- */}
-        <section className="px-6 mt-6">
-          <div className="bg-green-50 border border-green-100 p-4 rounded-3xl flex items-center gap-4">
-            
-            {/* Ustamızın Resmi (Eski tasarımdaki jilet gibi çerçeve) */}
-            <div className="w-14 h-14 bg-white rounded-full flex-shrink-0 border-2 border-green-200 shadow-sm overflow-hidden">
-               <img src="/teknisyen.webp" alt="Uzman Teknisyen" className="w-full h-full object-cover" />
-            </div>
+          {/* -- 4. TEKNİSYEN MÜSAİTLİK -- */}
+<section className="px-6 mt-6">
+  <div className="bg-green-50 border border-green-100 p-4 rounded-3xl flex items-center gap-4">
+    
+    <div className="w-14 h-14 bg-white rounded-full flex-shrink-0 border-2 border-green-200 shadow-sm overflow-hidden relative">
+      <img 
+        src="/teknisyen.webp" 
+        alt="Uzman Teknisyen" 
+        className="w-full h-full object-cover"
+        onError={(e) => { 
+          e.target.style.display = 'none'; 
+          e.target.parentElement.innerHTML = '<span class="flex items-center justify-center w-full h-full text-2xl">👨‍🔧</span>'; 
+        }} 
+      />
+    </div>
 
-            {/* Yeni Tasarımdaki V8 Motorlu Metinler */}
-            <div className="flex flex-col leading-tight uppercase font-bold text-left">
-              <span className="text-green-700 text-xs">TEKNİSYENİMİZ MÜSAİT!</span>
-              <span className="text-green-600 text-[10px] italic">MOTOR, KAZAN VE KART ARIZASI UZMANI</span>
-              <span className="text-[9px] text-slate-500 mt-1">⭐ %97 MEMNUNİYET • ✅ ORİJİNAL PARÇA</span>
-            </div>
-            
-          </div>
-        </section>
+    <div className="flex flex-col leading-tight uppercase font-bold text-left">
+      <span className="text-green-700 text-xs">TEKNİSYENİMİZ MÜSAİT!</span>
+      <span className="text-green-600 text-[10px] italic">MOTOR, KAZAN VE KART ARIZASI UZMANI</span>
+      <span className="text-[9px] text-slate-500 mt-1">⭐ %97 MEMNUNİYET • ✅ GARANTİLİ PARÇA</span>
+    </div>
+    
+  </div>
+</section>
 
 
 
