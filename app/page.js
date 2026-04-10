@@ -38,7 +38,7 @@ export default function Home() {
         {/* -- 2. ANA GÖRSEL -- */}
         <div className="px-5 pt-5">
           <div className="w-full h-44 bg-slate-100 rounded-[30px] overflow-hidden relative shadow-lg border border-slate-100">
-             <img src="/teknisyen.webp" alt="Uzman Usta" className="w-full h-full object-cover opacity-85" />
+             <img src="/usta.webp" alt="Uzman Usta" className="w-full h-full object-cover opacity-85" />
              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Home() {
             
             {/* Ustamızın Resmi (usta.webp tam oturtuldu) */}
             <div className="w-14 h-14 bg-white rounded-full flex-shrink-0 border-2 border-green-200 shadow-sm overflow-hidden">
-               <img src="/usta.webp" alt="Uzman Teknisyen" className="w-full h-full object-cover" />
+               <img src="/teknisyen.webp" alt="Uzman Teknisyen" className="w-full h-full object-cover" />
             </div>
 
             {/* Yeni Tasarımdaki V8 Motorlu Metinler */}
