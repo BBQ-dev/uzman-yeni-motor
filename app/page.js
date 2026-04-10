@@ -59,9 +59,24 @@ export default function Home() {
           </div>
         </section>
 
-       <div className="w-14 h-14 bg-white rounded-full flex-shrink-0 border-2 border-green-200 shadow-sm overflow-hidden">
+      {/* -- 4. TEKNİSYEN MÜSAİTLİK -- */}
+        <section className="px-6 mt-6">
+          <div className="bg-green-50 border border-green-100 p-4 rounded-3xl flex items-center gap-4">
+            
+            {/* Ustamızın Resmi (usta.webp tam oturtuldu) */}
+            <div className="w-14 h-14 bg-white rounded-full flex-shrink-0 border-2 border-green-200 shadow-sm overflow-hidden">
                <img src="/usta.webp" alt="Uzman Teknisyen" className="w-full h-full object-cover" />
             </div>
+
+            {/* Yeni Tasarımdaki V8 Motorlu Metinler */}
+            <div className="flex flex-col leading-tight uppercase font-bold text-left">
+              <span className="text-green-700 text-xs">TEKNİSYENİMİZ MÜSAİT!</span>
+              <span className="text-green-600 text-[10px] italic">MOTOR, KAZAN VE KART ARIZASI UZMANI</span>
+              <span className="text-[9px] text-slate-500 mt-1">⭐ %97 MEMNUNİYET • ✅ ORİJİNAL PARÇA</span>
+            </div>
+            
+          </div>
+        </section>
 
         {/* -- 5. RAKAMLARLA GÜVEN BÖLÜMÜ -- */}
         <section className="px-6 mt-8">
