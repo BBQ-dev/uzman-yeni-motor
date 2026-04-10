@@ -38,7 +38,7 @@ export default function Home() {
         {/* -- 2. ANA GÖRSEL -- */}
         <div className="px-5 pt-5">
           <div className="w-full h-44 bg-slate-100 rounded-[30px] overflow-hidden relative shadow-lg border border-slate-100">
-             <img src="/usta.webp" alt="Uzman Usta" className="w-full h-full object-cover opacity-85" />
+             <img src="/teknisyen.webp" alt="Uzman Usta" className="w-full h-full object-cover opacity-85" />
              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           </div>
         </div>
