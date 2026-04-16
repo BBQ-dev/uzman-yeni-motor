@@ -38,7 +38,7 @@ export default function Page({ params }) {const { semt: rawSemt } = React.use(pa
   if (cihazKuyrugu === 'kombi') cihazAdi = "KOMBİ";
   if (cihazKuyrugu === 'klima') cihazAdi = "KLİMA";
   if (cihazKuyrugu === 'dondurucu') cihazAdi = "DERİN DONDURUCU";
-  if (cihazKuyrugu === 'fırın') cihazAdi = "FIRIN";
+  if (cihazKuyrugu === 'firin') cihazAdi = "FIRIN";
 
   let anaTabela = `${location} ${cihazAdi} SERVİSİ`; 
 
@@ -78,7 +78,7 @@ if (cihazKuyrugu === 'dondurucu') {
 }
 
 if (cihazKuyrugu === 'firin') {
-    if (arizaKuyrugu === 'resiztans') anaTabela = `${location} FIRIN RESİZTANS TAMİR SERVİSİ`;
+    if (arizaKuyrugu === 'rezistans') anaTabela = `${location} FIRIN REZİSTANS TAMİR SERVİSİ`;
     if (arizaKuyrugu === 'kart') anaTabela = `${location} FIRIN KART TAMİR SERVİSİ`;
     if (arizaKuyrugu === 'arıza') anaTabela = `${location} FIRIN ARIZA SERVİSİ`;
 }
