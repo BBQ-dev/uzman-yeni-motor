@@ -28,7 +28,7 @@ export default function Page({ params }) {const { semt: rawSemt } = React.use(pa
   
   const decodedSemt = decodeURIComponent(rawSemt).toLowerCase();
   const location = dictionary[decodedSemt] || decodedSemt.toUpperCase();
-  const siteTel = "02166429074"; 
+  const siteTel = "+902166429074"; 
 
   // -- 2. CİHAZ VE AĞIR SANAYİ ŞALTERLERİ --
   let cihazAdi = "BEYAZ EŞYA VE KOMBİ"; 
