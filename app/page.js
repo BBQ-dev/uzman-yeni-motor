@@ -235,7 +235,7 @@ export default function Home() {
              <div className="flex items-center gap-3 text-left leading-none uppercase">
                 <div className="bg-white/20 p-5 rounded-full text-xl">📞</div>
                 <div>
-                  <span className="text-lg font-black tracking-tighter block">0536 932 75 87</span>
+                  <span className="text-lg font-black tracking-tighter block">0216 642 90 74</span>
                   <span className="text-[8px] font-bold text-blue-100 mt-1 uppercase">TIKLA, HEMEN BAĞLAN</span>
                 </div>
              </div>
