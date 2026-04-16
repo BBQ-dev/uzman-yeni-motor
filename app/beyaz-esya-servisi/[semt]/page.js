@@ -742,4 +742,3 @@ if (cihazKuyrugu === 'firin') {
       </div>
     </main>
   );
-}
