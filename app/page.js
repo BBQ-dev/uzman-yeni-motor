@@ -233,7 +233,7 @@ export default function Home() {
             className="w-full bg-[#1E40AF] text-white p-4 rounded-[25px] flex items-center justify-between shadow-2xl active:scale-95 transition-all border-b-8 border-blue-900"
           >
              <div className="flex items-center gap-3 text-left leading-none uppercase">
-                <div className="bg-white/20 p-5 rounded-full text-xl">📞</div>
+                <div className="bg-white/20 p-4 w-7 h-7 rounded-full text-xl">📞</div>
                 <div>
                   <span className="text-lg font-black tracking-tighter block">0216 642 90 74</span>
                   <span className="text-[8px] font-bold text-blue-100 mt-1 uppercase">TIKLA, HEMEN BAĞLAN</span>
