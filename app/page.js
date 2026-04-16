@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function Home() {
   const location = "İSTANBUL";
-  const siteTel = "05369327587"; 
+  const siteTel = "02166429074"; 
 
   return (
     <main className="w-full min-h-screen bg-slate-200 font-sans text-slate-900 pb-32">
@@ -54,7 +54,7 @@ export default function Home() {
                AÇIK (07:00-23:00)
             </div>
             <div className="bg-[#FFF9E6] border border-[#FFD966]/30 inline-flex px-3 py-1.5 rounded-lg shadow-sm items-center gap-1 text-[10px] font-bold text-[#B48A00]">
-              <span> 785 M Yakında</span>
+              <span> 📍785 M Yakında</span>
             </div>
           </div>
         </section>
@@ -99,7 +99,7 @@ export default function Home() {
         {/* -- 6. HİZMET KARTLARI (Birebir Aynı Tasarım) -- */}
         <section className="px-6 py-8 bg-slate-50/80 border-y border-slate-100 text-left mt-8">
           <h2 className="text-[11px] font-black text-[#1E40AF] uppercase italic mb-4 leading-tight">
-           Çekmeköy,Ümraniye,Sancaktepe Bölge Servisi
+           Çekmeköy,Ümraniye,Sancaktepe,Ataşehir Bölge Servisi
           </h2>
           
           <div className="grid grid-cols-3 gap-2">
@@ -167,7 +167,7 @@ export default function Home() {
           <div className="flex gap-4 overflow-x-auto pb-4 no-scrollbar">
             <div className="bg-white p-5 rounded-[30px] border border-slate-100 min-w-[280px] shadow-sm text-left">
               <div className="flex justify-between mb-2 items-center">
-                <span className="font-bold text-[11px] uppercase text-slate-800">Selin Y.</span>
+                <span className="font-bold text-[11px] uppercase text-slate-800">Merve Y.</span>
                 <span className="text-yellow-400 text-[10px]">★★★★★</span>
               </div>
               <p className="text-[10px] text-slate-600 italic font-medium leading-relaxed uppercase">
@@ -236,7 +236,7 @@ export default function Home() {
                 <div className="bg-white/20 p-5 rounded-full text-xl">📞</div>
                 <div>
                   <span className="text-lg font-black tracking-tighter block">0536 932 75 87</span>
-                  <span className="text-[8px] font-bold text-blue-100 mt-1 uppercase">TIKLA, HEMEN USTAYA BAĞLAN</span>
+                  <span className="text-[8px] font-bold text-blue-100 mt-1 uppercase">TIKLA, HEMEN BAĞLAN</span>
                 </div>
              </div>
              <span className="text-xl opacity-40">❯</span>
