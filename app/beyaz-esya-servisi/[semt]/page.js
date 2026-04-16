@@ -680,27 +680,29 @@ if (cihazKuyrugu === 'firin') {
   </div>
 </footer>
 
-        {/* -- 11. SABİT BUTONLAR (WhatsApp ve Arama) -- */}
-        <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[600px] p-4 z-[100] bg-gradient-to-t from-white via-white/80 to-transparent">
-          
-          
+        {/* -- 10. SABİT ARAMA BUTONU (SADE VE SERT) -- */}
+<div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[600px] p-4 z-[100]">
+  <a 
+    href={`tel:${siteTel}`} 
+    className="w-full bg-[#1E40AF] text-white p-4 rounded-2xl flex items-center justify-between shadow-2xl active:scale-95 border-b-4 border-blue-900"
+  >
+    <div className="flex items-center gap-4">
+      {/* Yeşil Pulse Efektli İkon */}
+      <div className="bg-green-500 p-3 rounded-xl animate-pulse">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7">
+          <path d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" />
+        </svg>
+      </div>
 
-          <a 
-            href={`tel:${siteTel}`} 
-            aria-label={`Acil ${location} Beyaz Eşya Tamircisi Çağırmak İçin Tıklayın`}
-            className="w-full bg-[#1E40AF] text-white p-4 rounded-[25px] flex items-center justify-between shadow-2xl active:scale-95 transition-all border-b-8 border-blue-900"
-          >
-             <div className="flex items-center gap-3 text-left leading-none uppercase">
-                <div className="bg-white/20 p-5 rounded-full text-xl">📞</div>
-                <div>
-                  <span className="text-lg font-black tracking-tighter block">0216 642 90 74</span>
-                  <span className="text-[8px] font-bold text-blue-100 mt-1 uppercase">TIKLA, HEMEN BAĞLAN</span>
-                </div>
-             </div>
-             <span className="text-xl opacity-40">❯</span>
-          </a>
-        </div>
-
+      <div className="leading-tight">
+        <span className="text-2xl font-black block tracking-tighter">0216 642 90 74</span>
+        <span className="text-[10px] font-bold text-blue-100 uppercase tracking-widest">TIKLA, HEMEN BAĞLAN</span>
+      </div>
+    </div>
+    
+    <span className="text-xl font-bold opacity-50">❯</span>
+  </a>
+</div>
         {/* -- 12. JSON-LD (SEO) -- */}
         <script
           type="application/ld+json"
