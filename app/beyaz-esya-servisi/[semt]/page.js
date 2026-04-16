@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
+import Script from 'next/script'; // Next.js'in özel script motoru
 import { useSearchParams } from 'next/navigation'; // <-- Kuyruk okuyucu çipi buraya taktık
 
 export default function Page({ params }) {const { semt: rawSemt } = React.use(params);
@@ -737,18 +738,19 @@ if (cihazKuyrugu === 'firin') {
             })
           }}
         />
-{/* -- 13. GOOGLE ADS TAKİP ÇİPİ (Bunu SEO kodunun hemen altına yapıştır) -- */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17988492070"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-17988492070');
-            `
-          }}
+{/* -- 13. GOOGLE ADS TAKİP ÇİPİ (V8 GÜNCEL) -- */}
+        <Script 
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17988492070" 
+          strategy="afterInteractive" 
         />
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17988492070');
+          `}
+        </Script>
 
       </div>
     </main>
