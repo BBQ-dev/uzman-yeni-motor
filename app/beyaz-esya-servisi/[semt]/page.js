@@ -266,7 +266,7 @@ if (cihazKuyrugu === 'firin') {
           <div className="flex gap-4 overflow-x-auto pb-4 no-scrollbar">
             <div className="bg-white p-5 rounded-[30px] border border-slate-100 min-w-[280px] shadow-sm text-left">
               <div className="flex justify-between mb-2 items-center">
-                <span className="font-bold text-[11px] uppercase text-slate-800">Selin Y.</span>
+                <span className="font-bold text-[11px] uppercase text-slate-800">Merve Y.</span>
                 <span className="text-yellow-400 text-[10px]">★★★★★</span>
               </div>
               <p className="text-[10px] text-slate-600 italic font-medium leading-relaxed uppercase">
