@@ -43,10 +43,11 @@ export default function Page({ params }) {const { semt: rawSemt } = React.use(pa
   let anaTabela = `${location} ${cihazAdi} SERVİSİ`; 
 
   if (cihazKuyrugu === 'camasir') {
-    if (arizaKuyrugu === 'kazan') anaTabela = `${location} ÇAMAŞIR MAKİNESİ KAZAN & RULMAN REVİZYONU`;
-    if (arizaKuyrugu === 'kart') anaTabela = `${location} ÇAMAŞIR MAKİNESİ ANAKART TAMİRİ`;
-    if (arizaKuyrugu === 'motor') anaTabela = `${location} ÇAMAŞIR MAKİNESİ MOTOR DEĞİŞİMİ`;
-    if (arizaKuyrugu === 'govde') anaTabela = `${location} ÇAMAŞIR MAKİNESİ GÖVDESİ YENİLEME`;
+    if (arizaKuyrugu === 'kazan') anaTabela = `${location} ÇAMAŞIR MAKİNESİ SERVİSİ KAZAN & RULMAN REVİZYONU`;
+    if (arizaKuyrugu === 'kart') anaTabela = `${location} ÇAMAŞIR MAKİNESİ SERVİSİ ANAKART TAMİRİ`;
+    if (arizaKuyrugu === 'motor') anaTabela = `${location} ÇAMAŞIR MAKİNESİ SERVİSİ MOTOR DEĞİŞİMİ`;
+    if (arizaKuyrugu === 'govde') anaTabela = `${location} ÇAMAŞIR MAKİNESİ SERVİSİ GÖVDESİ YENİLEME`;
+    if (arizaKuyrugu === 'servis') anaTabela = `${location} ÇAMAŞIR MAKİNESİ SERVİSİ`;
   }
   if (cihazKuyrugu === 'buzdolabi') {
     if (arizaKuyrugu === 'motor') anaTabela = `${location} BUZDOLABI MOTOR (KOMPRESÖR) DEĞİŞİMİ`;
