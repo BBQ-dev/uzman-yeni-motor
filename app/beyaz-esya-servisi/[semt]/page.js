@@ -735,7 +735,7 @@ if (cihazKuyrugu === 'firin') {
               "keywords": "bulaşık makinesi tamircisi, Beyaz Eşya Servisi, Buzdolabı Tamiri, buzdolabı motor değişimi, çamaşır makinesi tamircisi, buzdolabı gaz dolumu, acil tamir ustası, bosch, arçelik, beko, altus, profilo, vestel, siemens garantili özel servis",
               "priceRange": "₺₺"
             })
-          }
+          }}
         />
 
       </div>
