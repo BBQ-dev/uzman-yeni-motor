@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 
 export default function Iletisim() {
-  const siteTel = "05369327587";
+  const siteTel = "02166429074";
   const whatsappLink = `https://wa.me/9${siteTel}`;
 
   return (
