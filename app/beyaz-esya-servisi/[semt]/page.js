@@ -737,15 +737,19 @@ if (cihazKuyrugu === 'firin') {
             })
           }}
         />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17988492070"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+{/* -- 13. GOOGLE ADS TAKİP ÇİPİ (Bunu SEO kodunun hemen altına yapıştır) -- */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-SENIN_KODUN_BURAYA"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-SENIN_KODUN_BURAYA');
+            `
+          }}
+        />
 
-  gtag('config', 'AW-17988492070');
-</script>
       </div>
     </main>
   );
