@@ -50,38 +50,43 @@ export default function Page({ params }) {const { semt: rawSemt } = React.use(pa
     if (arizaKuyrugu === 'servis') anaTabela = `${location} ÇAMAŞIR MAKİNESİ SERVİSİ`;
   }
   if (cihazKuyrugu === 'buzdolabi') {
-    if (arizaKuyrugu === 'motor') anaTabela = `${location} BUZDOLABI MOTOR (KOMPRESÖR) DEĞİŞİMİ`;
-    if (arizaKuyrugu === 'kart') anaTabela = `${location} BUZDOLABI ANAKART TAMİRİ`;
-    if (arizaKuyrugu === 'gaz') anaTabela = `${location} BUZDOLABI GAZ BASMA SERVİSİ`;
+    if (arizaKuyrugu === 'motor') anaTabela = `${location} BUZDOLABI SERVİSİ MOTOR (KOMPRESÖR) DEĞİŞİMİ`;
+    if (arizaKuyrugu === 'kart') anaTabela = `${location} BUZDOLABI SERVİSİ ANAKART TAMİRİ`;
+    if (arizaKuyrugu === 'gaz') anaTabela = `${location} BUZDOLABI SERVİSİ GAZ BASMA SERVİSİ`;
+    if (arizaKuyrugu === 'buzdolabiservis') anaTabela = `${location} BUZDOLABI SERVİSİ`;
   }
   if (cihazKuyrugu === 'kombi') {
-    if (arizaKuyrugu === 'kart') anaTabela = `${location} KOMBİ ANAKART TAMİR MERKEZİ`;
-    if (arizaKuyrugu === 'eşanjör') anaTabela = `${location} KOMBİ EŞANJÖR TAMİR MERKEZİ`;
-    if (arizaKuyrugu === 'pompa') anaTabela = `${location} KOMBİ POMPA TAMİR MERKEZİ`;
+     if (arizaKuyrugu === 'kart') anaTabela = `${location} KOMBİ SERVİSİ ANAKART TAMİRİ`;
+    if (arizaKuyrugu === 'esanjor') anaTabela = `${location} KOMBİ SERVİSİ EŞANJÖR TAMİRİ`;
+    if (arizaKuyrugu === 'pompa') anaTabela = `${location} KOMBİ SERVİSİ POMPA TAMİRİ`;
     if (arizaKuyrugu === 'demirdokum') anaTabela = `${location} DEMİRDÖKÜM KOMBİ SERVİSİ`;
+    if (arizaKuyrugu === 'kombiservis') anaTabela = `${location} KOMBİ SERVİSİ`;
   }
   if (cihazKuyrugu === 'klima') {
-    if (arizaKuyrugu === 'motor') anaTabela = `${location} KLİMA DIŞ ÜNİTE (KOMPRESÖR) DEĞİŞİMİ`;
-    if (arizaKuyrugu === 'gazdolumu') anaTabela = `${location} KLİMA GAZ DOLUMU SERVİSİ`;
-    if (arizaKuyrugu === 'kart') anaTabela = `${location} KLİMA KART TAMİR SERVİSİ`;
-    if (arizaKuyrugu === 'bakım') anaTabela = `${location} KLİMA BAKIM SERVİSİ`;
+    if (arizaKuyrugu === 'motor') anaTabela = `${location} KLİMA SERVİSİ DIŞ ÜNİTE (KOMPRESÖR) DEĞİŞİMİ`;
+    if (arizaKuyrugu === 'gazdolumu') anaTabela = `${location} KLİMA SERVİSİ GAZ DOLUMU`;
+    if (arizaKuyrugu === 'kart') anaTabela = `${location} KLİMA SERVİSİ KART TAMİRİ`;
+    if (arizaKuyrugu === 'bakim') anaTabela = `${location} KLİMA BAKIM SERVİSİ`;
+    if (arizaKuyrugu === 'klimaservis') anaTabela = `${location} KLİMA SERVİSİ`;
   }
   
-  if (cihazKuyrugu === 'bulasik') {
-    if (arizaKuyrugu === 'kart') anaTabela = `${location} BULAŞIK MAKİNESİ ANAKART TAMİR MERKEZİ`;
-    if (arizaKuyrugu === 'rezistans') anaTabela = `${location} BULAŞIK MAKİNESİ ISITICI DEĞİŞİMİ`;
-    if (arizaKuyrugu === 'pompa') anaTabela = `${location} BULAŞIK MAKİNESİ POMPA TAMİR SERVİSİ`;
+  if (arizaKuyrugu === 'kart') anaTabela = `${location} BULAŞIK MAKİNESİ SERVİSİ ANAKART TAMİRİ`;
+    if (arizaKuyrugu === 'rezistans') anaTabela = `${location} BULAŞIK MAKİNESİ SERVİSİ ISITICI DEĞİŞİMİ`;
+    if (arizaKuyrugu === 'pompa') anaTabela = `${location} BULAŞIK MAKİNESİ SERVİSİ POMPA TAMİRİ`;
+    if (arizaKuyrugu === 'bulasikservis') anaTabela = `${location} BULAŞIK MAKİNESİ SERVİSİ`;
 }
 if (cihazKuyrugu === 'dondurucu') {
-    if (arizaKuyrugu === 'kart') anaTabela = `${location} DERİN DONDURUCU KART(İNVERTER) TAMİR SERVİSİ`;
-    if (arizaKuyrugu === 'motor') anaTabela = `${location} DERİN DONDURUCU MOTOR DEĞİŞİM SERVİSİ`;
-    if (arizaKuyrugu === 'gaz') anaTabela = `${location} DERİN DONDURUCU GAZ KAÇAĞI TESPİTİ & ŞARJI`;
+    if (arizaKuyrugu === 'kart') anaTabela = `${location} DERİN DONDURUCU SERVİSİ KART(İNVERTER) TAMİR`;
+    if (arizaKuyrugu === 'motor') anaTabela = `${location} DERİN DONDURUCU SERVİSİ MOTOR DEĞİŞİMİ`;
+    if (arizaKuyrugu === 'gaz') anaTabela = `${location} DERİN DONDURUCU SERVİSİ GAZ KAÇAĞI TESPİTİ & ŞARJI`;
+    if (arizaKuyrugu === 'dondurucuservis') anaTabela = `${location} DERİN DONDURUCU SERVİSİ`;
 }
 
 if (cihazKuyrugu === 'firin') {
-    if (arizaKuyrugu === 'rezistans') anaTabela = `${location} FIRIN REZİSTANS TAMİR SERVİSİ`;
-    if (arizaKuyrugu === 'kart') anaTabela = `${location} FIRIN KART TAMİR SERVİSİ`;
-    if (arizaKuyrugu === 'arıza') anaTabela = `${location} FIRIN ARIZA SERVİSİ`;
+    if (arizaKuyrugu === 'rezistans') anaTabela = `${location} FIRIN SERVİSİ REZİSTANS TAMİR`;
+    if (arizaKuyrugu === 'kart') anaTabela = `${location} FIRIN SERVİSİ KART TAMİRİ`;
+    if (arizaKuyrugu === 'ariza') anaTabela = `${location} FIRIN ARIZA SERVİSİ`;
+    if (arizaKuyrugu === 'firinservis') anaTabela = `${location} FIRIN SERVİSİ`;
 }
   return (
     <main className="w-full min-h-screen bg-slate-200 font-sans text-slate-900 pb-32">
