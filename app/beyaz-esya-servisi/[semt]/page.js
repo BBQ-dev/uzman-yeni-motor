@@ -86,8 +86,7 @@ if (cihazKuyrugu === 'firin') {
     if (arizaKuyrugu === 'rezistans') anaTabela = `${location} FIRIN SERVİSİ REZİSTANS TAMİR`;
     if (arizaKuyrugu === 'kart') anaTabela = `${location} FIRIN SERVİSİ KART TAMİRİ`;
     if (arizaKuyrugu === 'ariza') anaTabela = `${location} FIRIN ARIZA SERVİSİ`;
-    if (arizaKuyrugu === 'firinservis') anaTabela = `${location} FIRIN SERVİSİ`;
-}
+  }
   return (
     <main className="w-full min-h-screen bg-slate-200 font-sans text-slate-900 pb-32">
       <div className="max-w-[600px] mx-auto bg-white min-h-screen shadow-2xl relative overflow-hidden rounded-t-[40px] border border-blue-100/30 text-left">
