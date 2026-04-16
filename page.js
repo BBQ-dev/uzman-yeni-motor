@@ -14,7 +14,7 @@ export default function Home() {
             Kombi, Klima ve Beyaz Eşyada; <strong className="text-white">Motor, Anakart, Kazan ve Kompresör</strong> arızalarına profesyonel müdahale ediyoruz. Ufak işlerle vakit kaybetmiyor, cihazınızın kalbini onarıyoruz.
           </p>
           <a 
-            href="tel:+905555555555" 
+            href="tel:+902166429074" 
             className="inline-block bg-red-600 text-white font-bold py-4 px-10 rounded-lg text-2xl hover:bg-red-700 transition shadow-lg shadow-red-500/50"
           >
             Ağır Arıza Ustası Çağır
