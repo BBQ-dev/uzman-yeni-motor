@@ -69,8 +69,8 @@ export default function Page({ params }) {const { semt: rawSemt } = React.use(pa
     if (arizaKuyrugu === 'bakim') anaTabela = `${location} KLİMA BAKIM SERVİSİ`;
     if (arizaKuyrugu === 'klimaservis') anaTabela = `${location} KLİMA SERVİSİ`;
   }
-  
-  if (arizaKuyrugu === 'kart') anaTabela = `${location} BULAŞIK MAKİNESİ SERVİSİ ANAKART TAMİRİ`;
+  if (cihazKuyrugu === 'bulasik') {
+   if (arizaKuyrugu === 'kart') anaTabela = `${location} BULAŞIK MAKİNESİ SERVİSİ ANAKART TAMİRİ`;
     if (arizaKuyrugu === 'rezistans') anaTabela = `${location} BULAŞIK MAKİNESİ SERVİSİ ISITICI DEĞİŞİMİ`;
     if (arizaKuyrugu === 'pompa') anaTabela = `${location} BULAŞIK MAKİNESİ SERVİSİ POMPA TAMİRİ`;
     if (arizaKuyrugu === 'bulasikservis') anaTabela = `${location} BULAŞIK MAKİNESİ SERVİSİ`;
