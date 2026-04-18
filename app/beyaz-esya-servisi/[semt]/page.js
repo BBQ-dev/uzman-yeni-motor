@@ -32,7 +32,8 @@ export default function Page({ params }) {const { semt: rawSemt } = React.use(pa
   const siteTel = "+902166429074"; 
 
   // -- 2. CİHAZ VE AĞIR SANAYİ ŞALTERLERİ --
-  let cihazAdi = "BEYAZ EŞYA VE KOMBİ"; 
+  let cihazAdi = "BEYAZ EŞYA VE KOMBİ";
+  if (cihazKuyrugu === 'televizyon') cihazAdi = "TELEVİZYON";                                        
   if (cihazKuyrugu === 'camasir') cihazAdi = "ÇAMAŞIR MAKİNESİ";
   if (cihazKuyrugu === 'buzdolabi') cihazAdi = "BUZDOLABI";
   if (cihazKuyrugu === 'bulasik') cihazAdi = "BULAŞIK MAKİNESİ";
@@ -88,6 +89,17 @@ if (cihazKuyrugu === 'firin') {
     if (arizaKuyrugu === 'kart') anaTabela = `${location} FIRIN SERVİSİ KART TAMİRİ`;
     if (arizaKuyrugu === 'ariza') anaTabela = `${location} FIRIN ARIZA SERVİSİ`;
   }
+                                          
+    if (cihazKuyrugu === 'televizyon') {
+    if (arizaKuyrugu === 'tv') anaTabela = `${location} TELEVİZYON TAMİR SERVİSİ`;
+    if (arizaKuyrugu === 'led') anaTabela = `${location} TELEVİZYON LED TAMİR SERVİSİ`;
+    if (arizaKuyrugu === 'arcelik') anaTabela = `${location} ARÇELİK TELEVİZYON TAMİR SERVİSİ`;
+    if (arizaKuyrugu === 'beko') anaTabela = `${location} BEKO TELEVİZYON TAMİR SERVİSİ`;
+    if (arizaKuyrugu === 'samsung') anaTabela = `${location} SAMSUNG TELEVİZYON TAMİR SERVİSİ`;
+    if (arizaKuyrugu === 'vestel') anaTabela = `${location} VESTEL TELEVİZYON TAMİR SERVİSİ`;
+    if (arizaKuyrugu === 'lg') anaTabela = `${location} LG TELEVİZYON TAMİR SERVİSİ`;
+    if (arizaKuyrugu === 'telefunken') anaTabela = `${location} TELEFUNKEN TELEVİZYON TAMİR SERVİSİ`;
+}
   return (
     <main className="w-full min-h-screen bg-slate-200 font-sans text-slate-900 pb-32">
       <div className="max-w-[600px] mx-auto bg-white min-h-screen shadow-2xl relative overflow-hidden rounded-t-[40px] border border-blue-100/30 text-left">
@@ -238,6 +250,7 @@ if (cihazKuyrugu === 'firin') {
       { icon: "♨️", title: "Kombi", desc: "Anakart & Bakım" },
       { icon: "🌬️", title: "Klima", desc: "Gaz & Kompresör" },
       { icon: "🥘", title: "Fırın", desc: "Rezistans" },
+      { icon: "📺", title: "Televizyon", desc: "Panel & LED" },
     ].map((hizmet, index) => (
       <div 
         key={index}
@@ -318,9 +331,10 @@ if (cihazKuyrugu === 'firin') {
           </div>
         </section>
         <section className="px-6 py-8 bg-slate-50 border-y border-slate-100 text-left">
-          <h2 className="text-[12px] font-black text-[#1E40AF] uppercase italic mb-6">
-            {location} {cihazAdi} UZMANI CEVAPLIYOR
-          </h2>
+          {/* -- Bu başlık kısmını bul ve şununla değiştir -- */}
+<h2 className="text-[12px] font-black text-[#1E40AF] uppercase italic mb-6">
+  {cihazKuyrugu === 'televizyon' ? "TV UZMANI CEVAPLIYOR" : `${location} ${cihazAdi} UZMANI CEVAPLIYOR`}
+</h2>
           
           <div className="space-y-6">
 
@@ -599,6 +613,41 @@ if (cihazKuyrugu === 'firin') {
         TAHLİYE POMPASI DEĞİŞİMİ, ŞAMANDIRA (TAŞMA) ARIZASI VE HORTUM KAÇAKLARI. {location} ACİL BULAŞIK MAKİNESİ TAMİRCİSİ 1 SAATTE KAPINIZDA.
       </p>
     </div>
+  </div>
+)}
+
+{/* Sadece TELEVİZYON linkinde gözükecek - 4 Çeşit SEO Bloğu */}
+{cihazKuyrugu === 'televizyon' && (
+  <div className="grid grid-cols-1 gap-3">
+    
+    <div className="bg-white p-3 rounded-xl shadow-sm border border-blue-50">
+      <h3 className="text-[10px] font-black text-slate-800 uppercase italic">TV Ses var görüntü yok (LED Bar Değişimi) mi?</h3>
+      <p className="text-[9px] text-slate-500 mt-1 leading-tight font-bold uppercase">
+        {location} TELEVİZYON LED DEĞİŞİMİ VE EKRAN KARARMASI ONARIMI. ORİJİNAL LED BAR KULLANIMI İLE 1 YIL GARANTİLİ YERİNDE TAMİR. GÖRÜNTÜ GİTMESİ VE MAVİ EKRAN SORUNLARINDA AYNI GÜN ÇÖZÜM.
+      </p>
+    </div>
+
+    <div className="bg-white p-3 rounded-xl shadow-sm border border-blue-50">
+      <h3 className="text-[10px] font-black text-slate-800 uppercase italic">Televizyon ekranında dikey çizgi veya sıvı teması mı var?</h3>
+      <p className="text-[9px] text-slate-500 mt-1 leading-tight font-bold uppercase">
+        {location} TV PANEL TAMİR MERKEZİ. COF TAMİRİ, PANEL SIVI TEMASI ONARIMI VE LAZER MAKİNESİ İLE HÜCRE YENİLEME. YÜKSEK MALİYETLİ PANEL DEĞİŞİMİ YERİNE EKONOMİK VE GARANTİLİ ONARIM.
+      </p>
+    </div>
+
+    <div className="bg-white p-3 rounded-xl shadow-sm border border-blue-50">
+      <h3 className="text-[10px] font-black text-slate-800 uppercase italic">TV Logoda kalıyor veya kendiliğinden mi kapanıyor?</h3>
+      <p className="text-[9px] text-slate-500 mt-1 leading-tight font-bold uppercase">
+        TV ANAKART TAMİRİ, YAZILIM GÜNCELLEME VE BESLEME KARTI REVİZYONU. {location} BÖLGESİNDE ELEKTRONİK ARIZALARDA KOMPLE KART DEĞİŞİMİNE SON, BİLEŞEN BAZLI PROFESYONEL TAMİR.
+      </p>
+    </div>
+
+    <div className="bg-white p-3 rounded-xl shadow-sm border border-blue-50">
+      <h3 className="text-[10px] font-black text-slate-800 uppercase italic">Samsung, LG, Philips ve Vestel Garantili Özel Servis</h3>
+      <p className="text-[9px] text-slate-500 mt-1 leading-tight font-bold uppercase">
+        {location} GENELİNDE TÜM MARKALARDA BAĞIMSIZ ÖZEL SERVİS. ORİJİNAL YEDEK PARÇA VE UZMAN TEKNİSYEN KADROSUYLA AYNI GÜN ACİL TV TAMİR DESTEĞİ. 0216 642 90 74.
+      </p>
+    </div>
+
   </div>
 )}
 
