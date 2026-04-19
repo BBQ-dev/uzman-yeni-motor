@@ -82,6 +82,15 @@ if (cihazKuyrugu === 'dondurucu') {
     if (arizaKuyrugu === 'motor') anaTabela = `${location} DERİN DONDURUCU SERVİSİ MOTOR DEĞİŞİMİ`;
     if (arizaKuyrugu === 'gaz') anaTabela = `${location} DERİN DONDURUCU SERVİSİ GAZ KAÇAĞI TESPİTİ & ŞARJI`;
     if (arizaKuyrugu === 'dondurucuservis') anaTabela = `${location} DERİN DONDURUCU SERVİSİ`;
+    if (arizaKuyrugu === 'ugur') anaTabela = `${location} DERİN DONDURUCU SERVİSİ`;
+    if (arizaKuyrugu === 'bosch') anaTabela = `${location} DERİN DONDURUCU SERVİSİ`;
+    if (arizaKuyrugu === 'arcelik') anaTabela = `${location} DERİN DONDURUCU SERVİSİ`;
+    if (arizaKuyrugu === 'beko') anaTabela = `${location} DERİN DONDURUCU SERVİSİ`;
+    if (arizaKuyrugu === 'vestel') anaTabela = `${location} DERİN DONDURUCU SERVİSİ`;
+    if (arizaKuyrugu === 'altus') anaTabela = `${location} DERİN DONDURUCU SERVİSİ`;
+    if (arizaKuyrugu === 'siemens') anaTabela = `${location} DERİN DONDURUCU SERVİSİ`;
+    if (arizaKuyrugu === 'profilo') anaTabela = `${location} DERİN DONDURUCU SERVİSİ`;
+    if (arizaKuyrugu === 'indesit') anaTabela = `${location} DERİN DONDURUCU SERVİSİ`;
 }
 
 if (cihazKuyrugu === 'firin') {
