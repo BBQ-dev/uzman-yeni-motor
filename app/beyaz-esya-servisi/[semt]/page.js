@@ -56,12 +56,13 @@ export default function Page({ params }) {const { semt: rawSemt } = React.use(pa
     if (arizaKuyrugu === 'kart') anaTabela = `${location} BUZDOLABI SERVİSİ ANAKART TAMİRİ`;
     if (arizaKuyrugu === 'gaz') anaTabela = `${location} BUZDOLABI SERVİSİ GAZ BASMA SERVİSİ`;
     if (arizaKuyrugu === 'buzdolabiservis') anaTabela = `${location} BUZDOLABI SERVİSİ`;
-    if (arizaKuyrugu === 'arcelik') anaTabela = `${location} ARÇELİK BUZDOLABI SERVİSİ GAZ BASMA SERVİSİ`;
-    if (arizaKuyrugu === 'beko') anaTabela = `${location} BEKO BUZDOLABI SERVİSİ GAZ BASMA SERVİSİ`;
-    if (arizaKuyrugu === 'altus') anaTabela = `${location} ALTUS BUZDOLABI SERVİSİ GAZ BASMA SERVİSİ`;
-    if (arizaKuyrugu === 'bosch') anaTabela = `${location} BOSCH BUZDOLABI SERVİSİ GAZ BASMA SERVİSİ`;
-    if (arizaKuyrugu === 'siemens') anaTabela = `${location} SİEMENS BUZDOLABI SERVİSİ GAZ BASMA SERVİSİ`;
-    if (arizaKuyrugu === 'vestel') anaTabela = `${location} VESTEL BUZDOLABI SERVİSİ GAZ BASMA SERVİSİ`;
+    if (arizaKuyrugu === 'arcelik') anaTabela = `${location} ARÇELİK BUZDOLABI SERVİSİ`;
+    if (arizaKuyrugu === 'beko') anaTabela = `${location} BEKO BUZDOLABI SERVİSİ `;
+    if (arizaKuyrugu === 'altus') anaTabela = `${location} ALTUS BUZDOLABI SERVİSİ`;
+    if (arizaKuyrugu === 'bosch') anaTabela = `${location} BOSCH BUZDOLABI SERVİSİ`;
+    if (arizaKuyrugu === 'siemens') anaTabela = `${location} SİEMENS BUZDOLABI SERVİSİ`;
+    if (arizaKuyrugu === 'vestel') anaTabela = `${location} VESTEL BUZDOLABI SERVİSİ`;
+    if (arizaKuyrugu === 'profilo') anaTabela = `${location} PROFİLO BUZDOLABI SERVİSİ`;
   }
   if (cihazKuyrugu === 'kombi') {
      if (arizaKuyrugu === 'kart') anaTabela = `${location} KOMBİ SERVİSİ ANAKART TAMİRİ`;
