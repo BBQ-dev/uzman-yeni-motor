@@ -63,6 +63,10 @@ export default function Page({ params }) {const { semt: rawSemt } = React.use(pa
     if (arizaKuyrugu === 'siemens') anaTabela = `${location} SİEMENS BUZDOLABI SERVİSİ`;
     if (arizaKuyrugu === 'vestel') anaTabela = `${location} VESTEL BUZDOLABI SERVİSİ`;
     if (arizaKuyrugu === 'profilo') anaTabela = `${location} PROFİLO BUZDOLABI SERVİSİ`;
+    if (arizaKuyrugu === 'buzdolabitamircisi') anaTabela = `${location} BUZDOLABI TAMİRCİSİ `;
+    if (arizaKuyrugu === 'buzdolabitamiri') anaTabela = `${location} BUZDOLABI TAMİRİ`;
+    if (arizaKuyrugu === 'buzdolabisogutmuyor') anaTabela = `${location} Buzdolabı Alt Kısım Soğutmuyor İse Hemen Ulaşın`;
+    if (arizaKuyrugu === 'buzdolabitamircileri') anaTabela = `${location} BUZDOLABI TAMİRCİLERİ'NİN EN İYİSİ`;
   }
   if (cihazKuyrugu === 'kombi') {
      if (arizaKuyrugu === 'kart') anaTabela = `${location} KOMBİ SERVİSİ ANAKART TAMİRİ`;
