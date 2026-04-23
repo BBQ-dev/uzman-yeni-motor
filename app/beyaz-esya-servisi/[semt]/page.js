@@ -80,7 +80,18 @@ export default function Page({ params }) {const { semt: rawSemt } = React.use(pa
     if (arizaKuyrugu === 'gazdolumu') anaTabela = `${location} KLİMA SERVİSİ GAZ DOLUMU`;
     if (arizaKuyrugu === 'kart') anaTabela = `${location} KLİMA SERVİSİ KART TAMİRİ`;
     if (arizaKuyrugu === 'bakim') anaTabela = `${location} KLİMA BAKIM SERVİSİ`;
-    if (arizaKuyrugu === 'klimaservis') anaTabela = `${location} KLİMA SERVİSİ`;
+    if (arizaKuyrugu === 'samsung') anaTabela = `${location} SAMSUNG KLİMA SERVİSİ`;
+    if (arizaKuyrugu === 'lg') anaTabela = `${location} LG KLİMA SERVİSİ`;
+    if (arizaKuyrugu === 'mitsubishi') anaTabela = `${location} MİTSUBİSHİ KLİMA SERVİSİ`;
+    if (arizaKuyrugu === 'gree') anaTabela = `${location} GREE KLİMA SERVİSİ`;
+    if (arizaKuyrugu === 'daikın') anaTabela = `${location} DAİKIN KLİMA SERVİSİ`;
+    if (arizaKuyrugu === 'beko') anaTabela = `${location} BEKO KLİMA SERVİSİ`;
+    if (arizaKuyrugu === 'arcelik') anaTabela = `${location} ARÇELİK KLİMA SERVİSİ`;
+    if (arizaKuyrugu === 'demirdokum') anaTabela = `${location} DEMİRDÖKÜM KLİMA SERVİSİ`;
+    if (arizaKuyrugu === 'tamircisi') anaTabela = `${location} MERKEZ KLİMA TAMİRCİSİ`;
+    
+  
+  
   }
   if (cihazKuyrugu === 'bulasik') {
    if (arizaKuyrugu === 'kart') anaTabela = `${location} BULAŞIK MAKİNESİ SERVİSİ ANAKART TAMİRİ`;
