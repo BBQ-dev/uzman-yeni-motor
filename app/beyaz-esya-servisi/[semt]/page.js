@@ -88,7 +88,7 @@ export default function Page({ params }) {const { semt: rawSemt } = React.use(pa
     if (arizaKuyrugu === 'beko') anaTabela = `${location} BEKO KLİMA SERVİSİ`;
     if (arizaKuyrugu === 'arcelik') anaTabela = `${location} ARÇELİK KLİMA SERVİSİ`;
     if (arizaKuyrugu === 'demirdokum') anaTabela = `${location} DEMİRDÖKÜM KLİMA SERVİSİ`;
-    if (arizaKuyrugu === 'tamircisi') anaTabela = `${location} MERKEZ KLİMA TAMİRCİSİ`;
+    if (arizaKuyrugu === 'tamircisi') anaTabela = `${location}  KLİMA TAMİRCİSİ`;
     
   
   
