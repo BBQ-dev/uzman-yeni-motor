@@ -252,7 +252,7 @@ if (cihazKuyrugu === 'firin') {
         <div className="flex justify-between text-[11px] font-bold border-b border-white/10 pb-1"><span>SIEMENS MOTOR:</span><span className="text-yellow-400 italic font-black">7.000 TL – 8.500 TL</span></div>
       </div>
       <div className="bg-white/10 p-3 rounded-2xl mb-4 text-[10px] leading-tight font-medium">
-        📢 <strong>Buzdolabı Motor Fiyatları 2026:</strong> Motor değişimi ortalama 6.500 TL - 8.000 TL arasıdır. Orijinal parça, vakumlama ve gaz basımı dahildir.
+        📢 <strong>Buzdolabı Motor Fiyatları 2026:</strong> Motor değişimi ortalama 6.500 TL - 9.000 TL arasıdır. Orijinal parça, vakumlama ve gaz basımı dahildir.Fiyatlar Net Olmamakla %10 Birlikte Esneyebilir.
       </div>
       <div className="grid grid-cols-2 gap-3">
         <div className="bg-red-500/20 p-3 rounded-2xl border border-red-500/30">
