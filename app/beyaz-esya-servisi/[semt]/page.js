@@ -238,7 +238,39 @@ if (cihazKuyrugu === 'firin') {
   </div>
 </section>
 
-
+{/* --- BUZDOLABI MOTOR DEĞİŞİM ÖZEL PANELİ --- */}
+{cihazKuyrugu === 'buzdolabi' && (
+  <section className="px-6 mt-8">
+    <div className="bg-slate-900 rounded-[35px] p-6 text-white shadow-2xl border-b-8 border-blue-700 text-left">
+      <h2 className="text-base font-black italic uppercase text-blue-400 mb-4 border-b border-blue-400/30 pb-2">
+        Motor Değişim Fiyatları (2026)
+      </h2>
+      <div className="space-y-2 mb-6">
+        <div className="flex justify-between text-[11px] font-bold border-b border-white/10 pb-1"><span>ARÇELİK MOTOR:</span><span className="text-yellow-400 italic font-black">6.000 TL – 8.000 TL</span></div>
+        <div className="flex justify-between text-[11px] font-bold border-b border-white/10 pb-1"><span>BEKO MOTOR:</span><span className="text-yellow-400 italic font-black">6.500 TL – 8.000 TL</span></div>
+        <div className="flex justify-between text-[11px] font-bold border-b border-white/10 pb-1"><span>BOSCH MOTOR:</span><span className="text-yellow-400 italic font-black">7.000 TL – 8.500 TL</span></div>
+        <div className="flex justify-between text-[11px] font-bold border-b border-white/10 pb-1"><span>SIEMENS MOTOR:</span><span className="text-yellow-400 italic font-black">7.000 TL – 8.500 TL</span></div>
+      </div>
+      <div className="bg-white/10 p-3 rounded-2xl mb-4 text-[10px] leading-tight font-medium">
+        📢 <strong>Buzdolabı Motor Fiyatları 2026:</strong> Motor değişimi ortalama 6.500 TL - 8.000 TL arasıdır. Orijinal parça, vakumlama ve gaz basımı dahildir.
+      </div>
+      <div className="grid grid-cols-2 gap-3">
+        <div className="bg-red-500/20 p-3 rounded-2xl border border-red-500/30">
+          <h3 className="text-red-400 font-black text-[10px] uppercase mb-1">Neden Bozulur?</h3>
+          <ul className="text-[9px] opacity-80 space-y-1">
+            <li>• Elektrik Dalgalanması</li>
+            <li>• 10+ Yıl Kullanım</li>
+            <li>• Gaz Kaçağı & Tıkanıklık</li>
+          </ul>
+        </div>
+        <div className="bg-blue-500/20 p-3 rounded-2xl border border-blue-500/30 text-[9px]">
+          <h3 className="text-blue-400 font-black text-[10px] uppercase mb-1">Teknik Bilgi</h3>
+          Motor (kompresör) tamir edilmez, değiştirilir. Basınç testi ve vakum hayati önem taşır.
+        </div>
+      </div>
+    </div>
+  </section>
+)}
 
 
 
@@ -537,6 +569,18 @@ if (cihazKuyrugu === 'firin') {
             {/* Sadece BUZDOLABI linkinde gözükecek - 4 Çeşit SEO Bloğu */}
 {cihazKuyrugu === 'buzdolabi' && (
   <div className="grid grid-cols-1 gap-3">
+  {/* BU SATIRI BUL: {cihazKuyrugu === 'buzdolabi' && (  */}
+{/* İÇİNE ŞUNU YAPIŞTIR: */}
+<div className="bg-white p-4 rounded-3xl border border-blue-50 shadow-sm mb-4 text-left">
+  <h3 className="text-[11px] font-black text-slate-800 uppercase italic mb-2">Hizmet Kapsamımız</h3>
+  <div className="grid grid-cols-2 gap-2 text-[10px] font-bold text-slate-500 uppercase">
+    <span>✅ Motor Değişimi</span>
+    <span>✅ Gaz Dolumu</span>
+    <span>✅ Kaçak Tespiti</span>
+    <span>✅ 1 Yıl İşçilik Garantisi</span>
+  </div>
+</div>
+ 
     {/* 1. MOTOR & KOMPRESÖR */}
     <div className="bg-white p-3 rounded-xl shadow-sm border border-blue-50">
       <h3 className="text-[10px] font-black text-slate-800 uppercase italic">Buzdolabı motor (kompresör) kalkış yapmıyor?</h3>
