@@ -239,7 +239,7 @@ if (cihazKuyrugu === 'firin') {
 </section>
 
 {/* --- BUZDOLABI MOTOR DEĞİŞİM ÖZEL PANELİ --- */}
-{cihazKuyrugu === 'buzdolabi' && (
+{(cihazKuyrugu === 'buzdolabi' && arizaKuyrugu === 'motor') && (
   <section className="px-6 mt-8">
     <div className="bg-slate-900 rounded-[35px] p-6 text-white shadow-2xl border-b-8 border-blue-700 text-left">
       <h2 className="text-base font-black italic uppercase text-blue-400 mb-4 border-b border-blue-400/30 pb-2">
@@ -567,7 +567,7 @@ if (cihazKuyrugu === 'firin') {
             
 
             {/* Sadece BUZDOLABI linkinde gözükecek - 4 Çeşit SEO Bloğu */}
-{cihazKuyrugu === 'buzdolabi' && (
+{(cihazKuyrugu === 'buzdolabi' && arizaKuyrugu === 'motor') && (
   <div className="grid grid-cols-1 gap-3">
   {/* BU SATIRI BUL: {cihazKuyrugu === 'buzdolabi' && (  */}
 {/* İÇİNE ŞUNU YAPIŞTIR: */}
