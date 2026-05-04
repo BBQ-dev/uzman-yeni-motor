@@ -335,6 +335,185 @@ if (cihazKuyrugu === 'firin') {
   </section>
 )}
 
+{/* --- SEO BİLGİ BLOĞU: MOTOR NEDEN BOZULUR? (ÖZGÜN İÇERİK) --- */}
+    <div className="bg-white border border-slate-200 rounded-[25px] p-6 mt-8 shadow-sm text-left">
+      <h3 className="text-[14px] font-black text-[#1E40AF] mb-3 uppercase tracking-tight">
+        Buzdolabı Kompresörü (Motoru) Neden Yanar?
+      </h3>
+      
+      <p className="text-[11px] font-bold text-slate-600 mb-3 leading-relaxed">
+        Soğutma sisteminin kalbi olan kompresör, durduk yere arıza vermez. Genellikle cihazı yoran ve motorun ömrünü bitiren ana etkenler şunlardır:
+      </p>
+
+      <ul className="text-[11px] font-bold text-slate-700 space-y-2 mb-5 pl-2">
+        <li className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 animate-pulse"></span> 
+          Cihazın yaşlanması ve metal yorgunluğu (10 yılı aşan kullanım)
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 animate-pulse"></span> 
+          Şebekeden kaynaklanan ani voltaj iniş çıkışları
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 animate-pulse"></span> 
+          Sistemde gaz kaçağı olduğu için motorun dinlenmeden (sürekli) çalışması
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 animate-pulse"></span> 
+          Arka peteklerin (kondanser) aşırı tozlanması sonucu motorun soğuyamaması
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 animate-pulse"></span> 
+          Kapasitenin çok üzerinde gıda yüklenmesi ve dolabın zorlanması
+        </li>
+      </ul>
+
+      <p className="text-[11px] font-bold text-slate-600 mb-3 leading-relaxed">
+        Peki motorun bittiğini (arızalandığını) nasıl anlarsınız? İşte en net sinyaller:
+      </p>
+
+      <ul className="text-[11px] font-bold text-slate-700 space-y-2 pl-2">
+        <li className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span> 
+          Dolabın içi tamamen oda sıcaklığına döner (Soğutma sıfıra iner)
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span> 
+          Motor hiç susmaz, sürekli devrededir ama içeriyi bir türlü soğutmaz
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span> 
+          Arka kısımdan şiddetli tıkırtı, metal sürtünmesi veya inleme sesleri gelir
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span> 
+          Dolabın fişini prize taktığınız an evin sigortası atar (Kısa devre)
+        </li>
+      </ul>
+    </div>
+
+
+{/* --- SEO BİLGİ BLOĞU: İŞLEM SÜRESİ VE HAKKIMIZDA --- */}
+    <div className="bg-white border border-slate-200 rounded-[25px] p-6 mt-4 shadow-sm text-left">
+      
+      {/* 1. SÜRE VE İŞLEM DETAYI */}
+      <h3 className="text-[14px] font-black text-[#1E40AF] mb-3 uppercase tracking-tight">
+        Buzdolabı Motor Değişimi Ne Kadar Sürer?
+      </h3>
+      <p className="text-[11px] font-bold text-slate-600 mb-3 leading-relaxed">
+        Cihazınızı günlerce atölyede bekletmiyor, tüm ağır arıza işlemlerini gözünüzün önünde evinizde gerçekleştiriyoruz:
+      </p>
+      <ul className="text-[11px] font-bold text-slate-700 space-y-2 mb-6 pl-2">
+        <li className="flex items-start gap-2">
+          <span className="mt-1 w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0 animate-pulse"></span> 
+          <span>İşlem süresi ortalama <strong className="text-green-600">2 ila 3 saat</strong> arasında değişmektedir.</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="mt-1 w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span> 
+          <span>Eski motorun sökümü, sistemin azotla temizlenmesi, vakumlama ve orijinal gramajda gaz şarjı bu süreye dahildir.</span>
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="mt-1 w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span> 
+          <span>İşlem bittiği an dolabınız <strong className="text-green-600">aynı gün</strong> soğutmaya başlar ve kullanıma teslim edilir.</span>
+        </li>
+      </ul>
+
+      <hr className="border-slate-100 mb-5" />
+
+      {/* 2. DİNAMİK HAKKIMIZDA VE SERVİS BİLGİSİ */}
+      <h3 className="text-[14px] font-black text-[#1E40AF] mb-3 uppercase tracking-tight">
+        {location} Uzman Teknik Servis Bilgisi
+      </h3>
+      <p className="text-[11px] font-bold text-slate-600 mb-3 leading-relaxed">
+        Kompresör değişimi, anakart onarımı ve sistem tıkanıklığı gibi profesyonellik gerektiren arızalar, <strong>Uzman Bölge Servis</strong> güvencesiyle doğrudan <strong className="text-blue-600 border-b border-blue-200">{location}</strong> bölgesinde devriye gezen tam donanımlı mobil araçlarımızla sağlanmaktadır.
+      </p>
+      <p className="text-[11px] font-bold text-slate-600 leading-relaxed">
+        Endüstriyel vakum pompaları, hassas dijital teraziler (gaz dolumu için) ve orijinal yedek parçalar kullanılarak <strong>%100 yerinde servis</strong> hizmeti verilir. Yüksek maliyetli yetkili servis faturalarına son veren, müşteri odaklı ve 2 Yıl Garantili tam bağımsız özel servis merkezidir.
+      </p>
+      
+    </div>
+
+    {/* --- SEO BİLGİ BLOĞU: YENİ DOLAP MI VS MOTOR DEĞİŞİMİ Mİ? --- */}
+    <div className="bg-white border border-slate-200 rounded-[25px] p-6 mt-4 shadow-sm text-left">
+      
+      <h3 className="text-[14px] font-black text-[#1E40AF] mb-2 uppercase tracking-tight">
+        Yeni Buzdolabı Mı Almalı, Motoru Mu Değiştirmeli?
+      </h3>
+      <p className="text-[10px] font-bold text-slate-500 mb-4 leading-relaxed uppercase">
+        Müşterilerimizin en çok arafta kaldığı bu soruya, dürüst servis prensibiyle cevap veriyoruz:
+      </p>
+
+      <div className="grid grid-cols-1 gap-3 mb-5">
+        {/* YEŞİL KUTU: Motor Değişimi Ne Zaman Kârlı? */}
+        <div className="bg-green-50/70 border border-green-200 rounded-xl p-4">
+          <h4 className="text-[11px] font-black text-green-700 uppercase mb-2 flex items-center gap-1">
+            <span className="text-lg">✅</span> Motor Değişimi Kesinlikle Mantıklıdır Eğer;
+          </h4>
+          <ul className="text-[10px] font-bold text-slate-700 space-y-2 pl-1">
+            <li className="flex items-start gap-2">
+              <span className="mt-1 w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span> 
+              <span>Cihazın iç/dış gövdesi temizse ve <strong>elektronik kartı sorunsuz</strong> çalışıyorsa (Yeni motor cihaza 10 yıl daha ömür katar).</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span> 
+              <span>Çift kapılı, XL veya Inverter gibi <strong>üst segment, pahalı bir model</strong> kullanıyorsanız (Yenisini almak devasa maliyettir).</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span> 
+              <span>Dolabınız 10-12 yaşını geçmemişse ve yalıtımı hala güçlüyse.</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* KIRMIZI KUTU: Ne Zaman Sıfır Alınmalı? */}
+        <div className="bg-red-50/70 border border-red-200 rounded-xl p-4">
+          <h4 className="text-[11px] font-black text-red-700 uppercase mb-2 flex items-center gap-1">
+            <span className="text-lg">❌</span> Sıfır Cihaz Almak Daha Mantıklıdır Eğer;
+          </h4>
+          <ul className="text-[10px] font-bold text-slate-700 space-y-2 pl-1">
+            <li className="flex items-start gap-2">
+              <span className="mt-1 w-1.5 h-1.5 rounded-full bg-red-400 flex-shrink-0"></span> 
+              <span>Gövdede derin paslanmalar, iç plastikte şişmeler (gövde gaz kaçağı) varsa.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 w-1.5 h-1.5 rounded-full bg-red-400 flex-shrink-0"></span> 
+              <span>Motor dışında sürekli sensör, beyin, rezistans arızası verip sizi yoruyorsa.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1 w-1.5 h-1.5 rounded-full bg-red-400 flex-shrink-0"></span> 
+              <span>Çok eski, A sınıfı olmayan ve faturayı şişiren bir cihazsa.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr className="border-slate-100 mb-5" />
+
+      {/* TEKNİK BİLGİLER (Uzman Notu) */}
+      <div className="bg-[#1E40AF]/5 border border-blue-100 rounded-xl p-4 relative overflow-hidden">
+        {/* Dekoratif arka plan simgesi */}
+        <span className="absolute -right-4 -bottom-4 text-6xl opacity-5 select-none">👨‍🔧</span>
+        
+        <h3 className="text-[12px] font-black text-[#1E40AF] mb-3 uppercase tracking-tight flex items-center gap-2">
+          Uzmanından Teknik Notlar
+        </h3>
+        <ul className="text-[10px] font-bold text-slate-600 space-y-2 pl-1 leading-relaxed">
+          <li className="flex items-start gap-2">
+            <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span> 
+            <span>Piyasada "Motor" olarak bilinen parça aslında yüksek basınçlı bir <strong>Kompresördür</strong>.</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span> 
+            <span>Görevi; sistemdeki R600a veya R134a soğutucu gazını emip basarak kılcal borularda dolaştırmak ve soğutmayı başlatmaktır.</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span> 
+            <span>Sargıları yanmış veya valfi kırılmış/kilitlenmiş bir kompresör <strong>kesinlikle tamir edilmez</strong>. Fabrikasyon kapalı kutu, sıfır motor ile komple değişimi ve sisteme yeniden gaz basılması şarttır.</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
 
 
 
