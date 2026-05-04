@@ -1,8 +1,65 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Script from 'next/script'; // Next.js'in özel script motoru
 import { useSearchParams } from 'next/navigation'; // <-- Kuyruk okuyucu çipi buraya taktık
+
+// --- BURAYA YAPIŞTIRIYORSUN (HESAPLAMA MOTORU) ---
+function MaliyetHesaplayici() {
+  const [marka, setMarka] = useState(0);
+  const [teknoloji, setTeknoloji] = useState(0);
+  const [sonuc, setSonuc] = useState(null);
+
+  const hesapla = () => {
+    if (marka === 0) return alert("Lütfen Marka Seçin");
+    const temelFiyat = parseInt(marka);
+    const ekFiyat = parseInt(teknoloji);
+    setSonuc(temelFiyat + ekFiyat);
+  };
+
+  return (
+    <div className="border-2 border-blue-600 rounded-[25px] p-6 bg-blue-50 mt-4 shadow-lg text-left">
+      <h3 className="text-sm font-black text-blue-900 mb-2 italic uppercase">
+        Motor Değişim Maliyeti Hesapla
+      </h3>
+      <p className="text-[10px] font-bold text-slate-500 mb-4 uppercase">
+        Marka ve teknoloji seçerek tahmini servis bedelini saniyeler içinde öğrenin.
+      </p>
+
+      <div className="flex flex-col gap-3">
+        <div>
+          <select onChange={(e) => setMarka(e.target.value)} className="w-full p-3 rounded-xl border border-blue-200 focus:ring-2 focus:ring-blue-500 outline-none text-[11px] font-bold text-slate-700">
+            <option value="0">Buzdolabı Markasını Seçin...</option>
+            <option value="6800">Arçelik / Beko / Altus</option>
+            <option value="7800">Bosch / Siemens / Profilo</option>
+            <option value="8900">Samsung / LG / Sharp</option>
+            <option value="11000">Diğer İthal Markalar</option>
+          </select>
+        </div>
+        <div>
+          <select onChange={(e) => setTeknoloji(e.target.value)} className="w-full p-3 rounded-xl border border-blue-200 focus:ring-2 focus:ring-blue-500 outline-none text-[11px] font-bold text-slate-700">
+            <option value="0">Standart Kompresör (Eski Tip)</option>
+            <option value="700">Inverter (Enerji Tasarruflu Yeni Tip)</option>
+            <option value="2600">Dört Kapılı / Gardırop Tipi (Büyük Motor)</option>
+          </select>
+        </div>
+      </div>
+
+      <button onClick={hesapla} className="w-full mt-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-black text-[12px] uppercase py-3 rounded-xl transition duration-300 shadow-md active:scale-95">
+        Tahmini Maliyeti Gör
+      </button>
+
+      {sonuc && (
+        <div className="mt-4 p-4 bg-white rounded-xl border-2 border-green-500 text-center animate-bounce shadow-sm">
+          <span className="text-slate-500 block font-bold text-[10px] uppercase">Tahmini Değişim Bedeli</span>
+          <strong className="text-2xl text-green-600 font-black">{sonuc.toLocaleString('tr-TR')} TL</strong>
+          <p className="text-[8px] font-bold text-slate-400 mt-1 uppercase">*Vakumlama, Gaz Şarjı ve 2 Yıl Garanti Dahildir.</p>
+        </div>
+      )}
+    </div>
+  );
+}
+// --- HESAPLAMA MOTORU BİTİŞİ ---
 
 export default function Page({ params }) {const { semt: rawSemt } = React.use(params);
   
@@ -241,7 +298,12 @@ if (cihazKuyrugu === 'firin') {
 {/* --- BUZDOLABI MOTOR DEĞİŞİM ÖZEL PANELİ --- */}
 {(cihazKuyrugu === 'buzdolabi' && arizaKuyrugu === 'motor') && (
   <section className="px-6 mt-8">
-    <div className="bg-slate-900 rounded-[35px] p-6 text-white shadow-2xl border-b-8 border-blue-700 text-left">
+    
+    {/* YENİ DİZİLİŞ: FORM EN ÜSTE GELDİ */}
+    <MaliyetHesaplayici />
+
+    {/* MEVCUT SİYAH FİYAT KUTUSUN (FORMUN ALTINA İNDİ) */}
+    <div className="bg-slate-900 rounded-[35px] p-6 text-white shadow-2xl border-b-8 border-blue-700 text-left mt-8">
       <h2 className="text-base font-black italic uppercase text-blue-400 mb-4 border-b border-blue-400/30 pb-2">
         Motor Değişim Fiyatları (2026)
       </h2>
@@ -252,7 +314,7 @@ if (cihazKuyrugu === 'firin') {
         <div className="flex justify-between text-[11px] font-bold border-b border-white/10 pb-1"><span>SIEMENS MOTOR:</span><span className="text-yellow-400 italic font-black">7.000 TL – 8.500 TL</span></div>
       </div>
       <div className="bg-white/10 p-3 rounded-2xl mb-4 text-[10px] leading-tight font-medium">
-        📢 <strong>Buzdolabı Motor Fiyatları 2026:</strong> Motor değişimi ortalama 6.500 TL - 9.000 TL arasıdır. Orijinal parça, vakumlama ve gaz basımı dahildir.Fiyatlar Net Olmamakla %10 Birlikte Esneyebilir.
+        📢 <strong>Buzdolabı Motor Fiyatları 2026:</strong> Motor değişimi ortalama 6.500 TL - 8.000 TL arasıdır. Orijinal parça, vakumlama ve gaz basımı dahildir.
       </div>
       <div className="grid grid-cols-2 gap-3">
         <div className="bg-red-500/20 p-3 rounded-2xl border border-red-500/30">
@@ -269,8 +331,10 @@ if (cihazKuyrugu === 'firin') {
         </div>
       </div>
     </div>
+
   </section>
 )}
+
 
 
 
